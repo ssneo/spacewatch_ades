@@ -118,21 +118,21 @@ def extract_data_values_from_obs80_file( obs80_file, astrometry_catalog ):
             time_value['day'] = obs80[ (date_start + 8) : (date_start + 10) ]
             time_value['time'] = "0." + obs80[ (date_start + 11) : (date_start + 17) ].replace(" ", "") #get rid of the extra spaces
             obsTime = calculateObsTime( time_value ) #this function pull the needed values from the dictionary
-            obs[count]['obsTime'] = obsTime
+            obs[count]['obsTime'] = str( obsTime )
 
             ra = {}
             ra['ra_hour'] = obs80[32:34]
             ra['ra_minutes'] = obs80[35:37]
             ra['ra_seconds'] = obs80[38:43].replace(" ", "") #get rid of a possible trailing blank space
             ra = calculateRa_degs( ra )
-            obs[count]['ra'] = ra
+            obs[count]['ra'] = str( ra )
 
             dec={}
             dec['dec_degrees'] = obs80[44:47]
             dec['dec_minutes'] = obs80[48:50]
             dec['dec_seconds'] = obs80[51:56].replace(" ", "") #get rid of a possible trailing blank space
             dec = calculateDec_degs( dec )
-            obs[count]['dec'] = dec
+            obs[count]['dec'] = str( dec )
 
             
             obs[count]['mag'] =obs80[65:70]

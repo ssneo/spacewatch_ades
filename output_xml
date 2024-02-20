@@ -39,38 +39,38 @@
 			<optical>
 				<provID>2023 JD6</provID>
 				<trkSub>K23J06D</trkSub>
+				<mode>CCD</mode>
+				<stn>691</stn>
 				<obsTime>2024-02-14T11:52:51.46Z</obsTime>
 				<ra>203.657917</ra>
 				<dec>10.415083</dec>
 				<mag>22.2 </mag>
 				<band>R</band>
-				<stn>691</stn>
 				<astCat>Gaia2</astCat>
-				<mode>CCD</mode>
 			</optical>
 			<optical>
 				<provID>2023 JD6</provID>
 				<trkSub>K23J06D</trkSub>
+				<mode>CCD</mode>
+				<stn>691</stn>
 				<obsTime>2024-02-14T12:17:03.84Z</obsTime>
 				<ra>203.654208</ra>
 				<dec>10.423028</dec>
 				<mag>21.5 </mag>
 				<band>R</band>
-				<stn>691</stn>
 				<astCat>Gaia2</astCat>
-				<mode>CCD</mode>
 			</optical>
 			<optical>
 				<provID>2023 JD6</provID>
 				<trkSub>K23J06D</trkSub>
+				<mode>CCD</mode>
+				<stn>691</stn>
 				<obsTime>2024-02-14T12:41:13.63Z</obsTime>
 				<ra>203.650583</ra>
 				<dec>10.430917</dec>
 				<mag>21.9 </mag>
 				<band>R</band>
-				<stn>691</stn>
 				<astCat>Gaia2</astCat>
-				<mode>CCD</mode>
 			</optical>
 		</obsData>
 	</obsBlock>

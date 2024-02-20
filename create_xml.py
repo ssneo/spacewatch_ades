@@ -86,18 +86,20 @@ def generate_xml(header_data, obs_data):
     if 'coinvestigators' in header_data:
         coinvestigators = XMLElement.SubElement(obsContext, "coinvestigators")
 
-        for key in header_data['coinvestigators']:
-            value = XMLElement.SubElement(coinvestigators, key)
-            value.text = header_data["coinvestigators"][key]
+        for j in header_data['coinvestigators']:
+            for key in header_data['coinvestigators'][j]:
+                value = XMLElement.SubElement(coinvestigators, key)
+                value.text = header_data["coinvestigators"][j][key]
         ##################
             
     # collaborators Information Section 
     if 'collaborators' in header_data:
         collaborators = XMLElement.SubElement(obsContext, "collaborators")
 
-        for key in header_data['collaborators']:
-            value = XMLElement.SubElement(collaborators, key)
-            value.text = header_data["collaborators"][key]
+        for j in header_data['collaborators']:
+            for key in header_data['collaborators'][j]:
+                value = XMLElement.SubElement(collaborators, key)
+                value.text = header_data["collaborators"][j][key]
     ##################
         
     # fundingSource Information Section 
@@ -124,10 +126,69 @@ def generate_xml(header_data, obs_data):
 
     # Set optical values in one neat loop
     for j in obs_data:
+        print (obs_data[j])
         optical = XMLElement.SubElement(obsData, "optical")
-        for key, value in obs_data[j].items():
-            element = XMLElement.SubElement(optical, key)
-            element.text = str(value)
+
+        if 'permID' in obs_data[j]:
+            element = XMLElement.SubElement(optical, 'permID')
+            element.text = obs_data[j]['permID']
+
+        if 'provID' in obs_data[j]:
+            element = XMLElement.SubElement(optical, 'provID')
+            element.text = obs_data[j]['provID']
+
+        if 'trkSub' in obs_data[j]:
+            element = XMLElement.SubElement(optical, 'trkSub')
+            element.text = obs_data[j]['trkSub']
+
+        #required
+        element = XMLElement.SubElement(optical, 'mode')
+        element.text = obs_data[j]['mode']
+
+        #required
+        element = XMLElement.SubElement(optical, 'stn')
+        element.text = obs_data[j]['stn']
+
+        #required
+        element = XMLElement.SubElement(optical, 'obsTime')
+        element.text = obs_data[j]['obsTime']
+
+        if 'rmsTime' in obs_data[j]:
+            element = XMLElement.SubElement(optical, 'rmsTime')
+            element.text = obs_data[j]['rmsTime']
+
+        #required
+        element = XMLElement.SubElement(optical, 'ra')
+        element.text = obs_data[j]['ra']
+
+        #required
+        element = XMLElement.SubElement(optical, 'dec')
+        element.text = obs_data[j]['dec']
+
+        if 'rmsRA' in obs_data[j]:
+            element = XMLElement.SubElement(optical, 'rmsRA')
+            element.text = obs_data[j]['rmsRA']
+
+        if 'rmsDEC' in obs_data[j]:
+            element = XMLElement.SubElement(optical, 'rmsDEC')
+            element.text = obs_data[j]['rmsDEC']
+
+        #required
+        element = XMLElement.SubElement(optical, 'mag')
+        element.text = obs_data[j]['mag']
+
+        if 'rmsMag' in obs_data[j]:
+            element = XMLElement.SubElement(optical, 'rmsMag')
+            element.text = obs_data[j]['rmsMag']
+
+    
+        #required
+        element = XMLElement.SubElement(optical, 'band')
+        element.text = obs_data[j]['band']
+
+        #required
+        element = XMLElement.SubElement(optical, 'astCat')
+        element.text = obs_data[j]['astCat']
 
     # Pass this back, and then use update_xml to add observations as needed.
     #return XMLElement, ades, obsData
