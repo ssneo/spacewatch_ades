@@ -1,0 +1,22 @@
+COD 691
+CON M. J. Brucker, Univ. of Arizona, 1629 E. Univ. Blvd, Tucson AZ 85721
+CON [mbrucker@arizona.edu]
+OBS J. V. Scotti
+MEA J. V. Scotti
+TEL 0.9-m f/3 reflector + CCD
+NET GAIA-DR2
+BND R
+ACK SW 0.9-m FOLLOWUP: K23J06D
+AC2 swatch@pholus.kpno.noirlab.edu
+COM Filter = Schott OG-515; bandpass 515-950 nm = V+R+I
+COM Measurements made using Astromatic (Ver. 2.24.01.15)
+COM Directory: 2024.02.14.013
+COM 12 stacked images per pass, 47 second exposure per image
+COM Type: PHA (Apollo), Last Observed: 2023 June 8, Uncertainty: 4
+COM Seeing: 1.4", Ephem mag: 22.2 V
+COM SNR1: 11, SNR2: 12, SNR3: 11
+
+     K23J06D KC2024 02 14.49504 13 34 37.90 +10 24 54.3          22.2 R      691
+     K23J06D KC2024 02 14.51185 13 34 37.01 +10 25 22.9          21.5 R      691
+     K23J06D KC2024 02 14.52863 13 34 36.14 +10 25 51.3          21.9 R      691
+

@@ -1,0 +1,76 @@
+<?xml version="1.0" ?>
+<ades version="2022">
+	<obsBlock>
+		<obsContext>
+			<observatory>
+				<mpcCode>691</mpcCode>
+				<name>Kitt Peak</name>
+			</observatory>
+			<submitter>
+				<name>M. J. Brucker</name>
+				<institution>University of Arizona</institution>
+			</submitter>
+			<observers>
+				<name>J. V. Scotti</name>
+			</observers>
+			<measurers>
+				<name>J. V. Scotti</name>
+			</measurers>
+			<telescope>
+				<name>SW 0.9m</name>
+				<aperture>0.9</aperture>
+				<detector>CCD</detector>
+				<fRatio>3</fRatio>
+				<filter>V+R+I</filter>
+			</telescope>
+			<fundingSource>NASA</fundingSource>
+			<comment>
+				<line>Filter = Schott OG-515; bandpass 515-950 nm = V+R+I</line>
+				<line>Measurements made using Astromatic (Ver. 2.24.01.15)</line>
+				<line>Directory: 2024.02.14.013</line>
+				<line>12 stacked images per pass, 47 second exposure per image</line>
+				<line>Type: PHA (Apollo), Last Observed: 2023 June 8, Uncertainty: 4</line>
+				<line>Seeing: 1.4&quot;, Ephem mag: 22.2 V</line>
+				<line>SNR1: 11, SNR2: 12, SNR3: 11</line>
+			</comment>
+		</obsContext>
+		<obsData>
+			<optical>
+				<provID>2023 JD6</provID>
+				<trkSub>K23J06D</trkSub>
+				<obsTime>2024-02-14T11:52:51.46Z</obsTime>
+				<ra>203.657917</ra>
+				<dec>10.415083</dec>
+				<mag>22.2 </mag>
+				<band>R</band>
+				<stn>691</stn>
+				<astCat>Gaia2</astCat>
+				<mode>CCD</mode>
+			</optical>
+			<optical>
+				<provID>2023 JD6</provID>
+				<trkSub>K23J06D</trkSub>
+				<obsTime>2024-02-14T12:17:03.84Z</obsTime>
+				<ra>203.654208</ra>
+				<dec>10.423028</dec>
+				<mag>21.5 </mag>
+				<band>R</band>
+				<stn>691</stn>
+				<astCat>Gaia2</astCat>
+				<mode>CCD</mode>
+			</optical>
+			<optical>
+				<provID>2023 JD6</provID>
+				<trkSub>K23J06D</trkSub>
+				<obsTime>2024-02-14T12:41:13.63Z</obsTime>
+				<ra>203.650583</ra>
+				<dec>10.430917</dec>
+				<mag>21.9 </mag>
+				<band>R</band>
+				<stn>691</stn>
+				<astCat>Gaia2</astCat>
+				<mode>CCD</mode>
+			</optical>
+		</obsData>
+	</obsBlock>
+</ades>
