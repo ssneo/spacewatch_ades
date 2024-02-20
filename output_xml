@@ -18,6 +18,7 @@
 			</measurers>
 			<telescope>
 				<name>SW 0.9m</name>
+				<design>NEED_TO_UPDATE_VALUE</design>
 				<aperture>0.9</aperture>
 				<detector>CCD</detector>
 				<fRatio>3</fRatio>

@@ -28,7 +28,7 @@ def get_telescope_header_info():
     #telescope_name is an optional field. A value of None will be ignored. (max string length = 100)
     header_info['691']['telescope']['name'] = 'SW 0.9m' #telescope Name
     #telescope_design is a required field. (max string length = 25)
-    header_info['691']['telescope']['design'] = None #telescope Design
+    header_info['691']['telescope']['design'] = 'NEED_TO_UPDATE_VALUE' #telescope Design
     #telescope_aperture is a required field. (positive decimal number with no more than a total of 6 characters)
     header_info['691']['telescope']['aperture'] = '0.9' #telescope aperture
     #telescope_detector is a required field: Only allowed values are in the documentation
