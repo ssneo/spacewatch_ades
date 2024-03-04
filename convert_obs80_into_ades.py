@@ -131,7 +131,10 @@ def extract_data_values_from_obs80_file( obs80_file, astrometry_catalog ):
             dec['dec_degrees'] = obs80[44:47]
             dec['dec_minutes'] = obs80[48:50]
             dec['dec_seconds'] = obs80[51:56].replace(" ", "") #get rid of a possible trailing blank space
-            dec = calculateDec_degs( dec )
+            if dec['dec_degrees'][0] == "+":
+                dec = calculateDec_degs( dec, 'positive' )
+            else:
+                dec = calculateDec_degs( dec, 'negative' )
             obs[count]['dec'] = str( dec )
 
             
